@@ -1,1 +1,31 @@
-<mxfile host="app.diagrams.net" modified="2022-04-07T16:31:50.860Z" agent="5.0 (X11)" version="17.4.1" etag="M2Mje6v0vE0MGG1q59XO" type="github"><diagram id="amIvmCTexY0jKX2aoCFh">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2022-04-07T16:37:32.730Z" agent="5.0 (X11)" etag="eRXCKg7iovNNygsn6bTx" version="17.4.1" type="github">
+  <diagram id="amIvmCTexY0jKX2aoCFh" name="Page-1">
+    <mxGraphModel dx="1354" dy="870" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="CLVZ7MVaheOm0qnkuFr2-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="CLVZ7MVaheOm0qnkuFr2-1" target="CLVZ7MVaheOm0qnkuFr2-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CLVZ7MVaheOm0qnkuFr2-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="CLVZ7MVaheOm0qnkuFr2-1" target="CLVZ7MVaheOm0qnkuFr2-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CLVZ7MVaheOm0qnkuFr2-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="CLVZ7MVaheOm0qnkuFr2-1" target="CLVZ7MVaheOm0qnkuFr2-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CLVZ7MVaheOm0qnkuFr2-1" value="calmstring" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="354" y="80" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="CLVZ7MVaheOm0qnkuFr2-4" value="kalendarz z dostępnością sal" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="560" y="260" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="CLVZ7MVaheOm0qnkuFr2-6" value="sale" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="354" y="260" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="CLVZ7MVaheOm0qnkuFr2-10" value="forum" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="140" y="260" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
