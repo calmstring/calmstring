@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-04-11T19:23:13.953Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.75 Safari/537.36" etag="eLFqBBnGmKKQPOgUslzb" version="17.4.2" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2022-04-11T19:30:19.648Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.75 Safari/537.36" etag="qMasMm041lAGWZi3rMRS" version="17.4.2" type="github" pages="3">
   <diagram id="amIvmCTexY0jKX2aoCFh" name="Page-1">
     <mxGraphModel dx="1422" dy="773" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -321,7 +321,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="hH5cxdrWFoUIalU8nTMK" name="Rozwiązanie problemu">
-    <mxGraphModel dx="1673" dy="838" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="669" dy="671" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -503,7 +503,7 @@
         <mxCell id="8kzLux_wAywbwRQsKtpq-5" value="" style="endArrow=classic;html=1;rounded=0;fontColor=none;endSize=6;strokeColor=default;strokeWidth=2;jumpStyle=none;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="63.00000000000023" y="1050.5" as="sourcePoint" />
-            <mxPoint x="1239" y="1051" as="targetPoint" />
+            <mxPoint x="1600" y="1051" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="8kzLux_wAywbwRQsKtpq-6" value="czas" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=none;sketch=1;fillStyle=cross-hatch;fontColor=none;" vertex="1" parent="1">
