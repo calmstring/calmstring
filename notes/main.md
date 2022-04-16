@@ -43,6 +43,7 @@ No, to weźmy dane za 2022 rok:
 | **11** | 2.29     | 3.30     | 4.30     | 5.30     |
 | **12** | 2.30     | 3.31     | 4.31     | 5.31     |
 | **13** |          | 3.32     | 4.31     | 5.31     |
+
 **Suma: 12 + 13 +13 + 13 = 51** (+ sale od teorii, ogólnokształcące...)
 *Całkowita suma w takim razie jest większa niż 51*
 
