@@ -48,17 +48,17 @@ No, to weźmy dane za 2022 rok:
 | **10** | 2.28     | 3.28     | 4.29     | 5.28     |
 | **11** | 2.29     | 3.29     | 4.30     | 5.29     |
 | **12** | 2.30     | 3.30     | 4.31     | 5.30     |
-| **13** |          | 3.31     | 4.31     | 5.31     |
-| **14** |          | 3.32     |          | 5.31     |
+| **13** |          | 3.31     | 4.32     | 5.31     |
+| **14** |          | 3.32     |          | 5.32     |
 
-**Suma: 12 + 14 +13 + 14 = 53** (+ sale od teorii, ogólnokształcące...) <---- tu jest błąd 
-*Całkowita suma w takim razie jest większa niż 51* <---- tu też 
+**Suma: 12 + 14 + 13 + 14 = 53** (+ sale od teorii, ogólnokształcące...) 
+*Całkowita suma w takim razie jest większa niż 53*
 
-Czyli na ucznia przypada dziennie `1,275 godziny dziennie` na ćwiczenie !@?
+Czyli na ucznia przypada dziennie `1,325 godziny dziennie` na ćwiczenie !@?
 Zakładając, że połowa z nich nie ćwiczy to jest ponad 2 godziny dziennie na ćwiczenie dla 
 każdego. *Hmmmm...*
 ##### Zła organizacja?
-No nie wszyscy chodzą do szkoły na 6:30 i siedzą do 21, ale mimo to jest do zagospodarowania `8h * 51 sal = 408 h` (dziennie!). To bardzo dużo czasu względnie jak na `24h`. Czyli gdyby ten grafik był skoordynowany, to liczba efektywnie spędzonych godzin powinna wzrosnąć. Przy około `60%`-owej skuteczności mamy `244h`, czyli po `2h` dla `122 uczniów`. Wygląda na dość sporo, jak na jeden dzień, chociaż tak naprawdę nie wiadomo ile osób dziennie ćwiczy obecnie.
+No nie wszyscy chodzą do szkoły na 6:30 i siedzą do 21, ale mimo to jest do zagospodarowania `8h * 53 sal = 424 h` (dziennie!). To bardzo dużo czasu względnie jak na `24h`. Czyli gdyby ten grafik był skoordynowany, to liczba efektywnie spędzonych godzin powinna wzrosnąć. Przy około `60%`-owej skuteczności mamy `254h`, czyli po `2h` dla `127 uczniów`. Wygląda na dość sporo, jak na jeden dzień, chociaż tak naprawdę nie wiadomo ile osób dziennie ćwiczy obecnie.
 
 ##### Co zyskam dzięki rozwiązaniu problemu?
 - grafik dostępności sal ćwiczeń, dzięki któremu można **zaplanować swój dzień** pod kątem **ćwiczenia** w zasadzie **od razu**
