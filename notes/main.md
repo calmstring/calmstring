@@ -22,9 +22,9 @@ Gdy, już mamy gdzie ćwiczyć, może okazać się, że instrument w sali jest w
 ## Co zyskam dzięki rozwiązaniu problemu?
 Pójście na portiernię po salę zajmuje `2-3 min.` *(Jak się nie biegnie)*, więc zaoszczędzenie przez sprawdznie w systemie (czy jest wolna, czy nie) $3* 100\%/(24*60) ≈ 0.2\% $ dnia nikogo nie przekona. *(Oczywiście uczniowie nie raz czychają przed portiernią, w oczekiwaniu na sale)*
 
-No, to weźmy dane za 2022 rok
-    - `≈320` uczniów w szkole ( 16 klas po około 20 osób)
-    - `8h` sala dostępna codziennie (dla zaniżenia)
+No, to weźmy dane za 2022 rok:
+- `≈320` uczniów w szkole ( 16 klas po około 20 osób)
+- `8h` sala dostępna codziennie (dla zaniżenia)
 
 
 #### Sale (generalnie):
