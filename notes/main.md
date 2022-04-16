@@ -29,27 +29,27 @@ Gdy, już mamy gdzie ćwiczyć, może okazać się, że instrument w sali jest w
 Pójście na portiernię po salę zajmuje `2-3 min.` *(Jak się nie biegnie)*, więc zaoszczędzenie przez sprawdznie w systemie (czy jest wolna, czy nie) $3* 100\%/(24*60) ≈ 0.2\% $ dnia nikogo nie przekona. *(Oczywiście uczniowie nie raz czychają przed portiernią, w oczekiwaniu na sale)*
 
 No, to weźmy dane za 2022 rok:
-- `≈320` uczniów w szkole (16 klas po około 20 osób)
-- `8h` sala dostępna codziennie (dla zaniżenia) 
+- `≈320` uczniów w szkole ( 16 klas po około 20 osób, od 6 klasy pierwszego stopnia)
+- `8h` sala dostępna codziennie (dla zaniżenia)
 
 
 #### Sale (generalnie):
 |   Lp   | 2 Piętro | 3 piętro | 4 piętro | 5 piętro |
 | :----: | -------- | -------- | -------- | -------- |
-| **1**  | 2.19     | 3.19     | 4.19     | 5.19     |
-| **2**  | 2.20     | 3.20     | 4.21     | 5.21     |
-| **3**  | 2.21     | 3.22     | 4.22     | 5.22     |
-| **4**  | 2.22     | 3.23     | 4.23     | 5.23     |
-| **5**  | 2.23     | 3.24     | 4.24     | 5.24     |
-| **6**  | 2.24     | 3.25     | 4.25     | 5.25     |
-| **7**  | 2.25     | 3.26     | 4.26     | 5.26     |
-| **8**  | 2.26     | 3.27     | 4.27     | 5.27     |
-| **9**  | 2.27     | 3.28     | 4.28     | 5.28     |
-| **10** | 2.28     | 3.29     | 4.29     | 5.29     |
-| **11** | 2.29     | 3.30     | 4.30     | 5.30     |
-| **12** | 2.30     | 3.31     | 4.31     | 5.31     |
-| **13** | -------- | 3.32     | 4.31     | 5.31     |
-| **14** | -------- | 3.14     | -------- | 5.14     | 
+| **1**  | 2.19     | 3.14     | 4.19     | 5.14     |
+| **2**  | 2.20     | 3.19     | 4.21     | 5.19     |
+| **3**  | 2.21     | 3.20     | 4.22     | 5.21     |
+| **4**  | 2.22     | 3.22     | 4.23     | 5.22     |
+| **5**  | 2.23     | 3.23     | 4.24     | 5.23     |
+| **6**  | 2.24     | 3.24     | 4.25     | 5.24     |
+| **7**  | 2.25     | 3.25     | 4.26     | 5.25     |
+| **8**  | 2.26     | 3.26     | 4.27     | 5.26     |
+| **9**  | 2.27     | 3.27     | 4.28     | 5.27     |
+| **10** | 2.28     | 3.28     | 4.29     | 5.28     |
+| **11** | 2.29     | 3.29     | 4.30     | 5.29     |
+| **12** | 2.30     | 3.30     | 4.31     | 5.30     |
+| **13** |          | 3.31     | 4.31     | 5.31     |
+| **14** |          | 3.32     |          | 5.31     |
 
 **Suma: 12 + 14 +13 + 14 = 53** (+ sale od teorii, ogólnokształcące...) <---- tu jest błąd 
 *Całkowita suma w takim razie jest większa niż 51* <---- tu też 
@@ -60,9 +60,6 @@ każdego. *Hmmmm...*
 ##### Zła organizacja?
 No nie wszyscy chodzą do szkoły na 6:30 i siedzą do 21, ale mimo to jest do zagospodarowania `8h * 51 sal = 408 h` (dziennie!). To bardzo dużo czasu względnie jak na `24h`. Czyli gdyby ten grafik był skoordynowany, to liczba efektywnie spędzonych godzin powinna wzrosnąć. Przy około `60%`-owej skuteczności mamy `244h`, czyli po `2h` dla `122 uczniów`. Wygląda na dość sporo, jak na jeden dzień, chociaż tak naprawdę nie wiadomo ile osób dziennie ćwiczy obecnie.
 
-
-
-
 ##### Co zyskam dzięki rozwiązaniu problemu?
 - grafik dostępności sal ćwiczeń, dzięki któremu można **zaplanować swój dzień** pod kątem **ćwiczenia** w zasadzie **od razu**
 - społeczność wspólnie dążąca to poprawy warunków ćwiczenia i planowania ćwiczenia
@@ -70,3 +67,38 @@ No nie wszyscy chodzą do szkoły na 6:30 i siedzą do 21, ale mimo to jest do z
   - umożliwienie śledzctwa w razie, gdy ktoś coś zepsół w sali
 - ogarniczenie do minimum czasu poświęconego na szukaniu sali do ćwiczeń
 - paradoksalne zwiększenie czasu na ćwiczenie
+  
+## Znaczące sprawy, o których wiedzę posiadają uczniowie (pytania do uczniów):
+- Jak często ćwiczysz w szkole?:
+  - Codziennie
+  - Trzy razy w tygodniu
+  - Dwa lub mniej
+  - Wcale
+- Ile najczęściej udaje ci się dziennie ćwiczyć w szkole?:
+  - Wcale
+  - do 1 godziny
+  - do 2 godziny
+  - do 3 godziny lub więcej 
+- Czy zdaża ci się, że nauczyciel wyprosił cię kiedyś z sali?:
+  - Tak, regularnie
+  - Tylko czasami
+  - Rzadko
+  - Wcale
+- Czy znasz grafik nauczycieli, którzy mają zajęcia w salach, w których najczęściej ćwiczysz?:
+  - Tak
+  - Po części
+  - Nie
+- Jak regularnie spotykasz się z "brakiem wolnych sal do ćwiczeń"?:
+  - Codziennie
+  - 2 razy w tygodniu lub więcej
+  - 1 w tygodniu lub rzadziej
+
+
+
+
+
+- Co sądzisz o dostępności sal ogólnokształcących do ćwiczenia po godz 14:30?
+  - tylko na to czekam
+  - bardzo dobry
+  - nie obchodzi mnie
+
