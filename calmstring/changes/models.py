@@ -4,11 +4,12 @@ from django.conf import settings
 from django.contrib.contenttypes.fields import GenericForeignKey
 from django.contrib.contenttypes.models import ContentType
 from django.core import serializers
+from django.dispatch import receiver
 
 
 from utils.models import UUIDModel,TimestampsModel
 
-from .signals import change_reverted
+from .signals import change_reverted,change_done
 
 class ChangeTypeError(Exception):
     pass
@@ -187,3 +188,7 @@ class Change(UUIDModel,TimestampsModel):
             )
         
         return (latest_change,content_object)
+    
+@receiver(change_done)
+def proccess_change(sender,**kwargs):
+    return Change.on_change(**kwargs)

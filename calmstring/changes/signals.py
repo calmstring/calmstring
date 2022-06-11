@@ -1,7 +1,5 @@
 import django.dispatch
 
-from .models import Change
-
 """
     Signal called by an reverted() when we are reverting version of some obejct
     
@@ -21,7 +19,3 @@ change_reverted = django.dispatch.Signal()
         - changes (optional) : dict of chanages or null. If null whole object will be serialized
 """
 change_done = django.dispatch.Signal()
-
-@django.dispatch.receiver(change_done)
-def proccess_change(sender,**kwargs):
-    return Change.on_change(**kwargs)
