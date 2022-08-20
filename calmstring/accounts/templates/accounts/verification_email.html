@@ -1,0 +1,106 @@
+{% load i18n %}
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="supported-color-schemes" content="light dark" />
+    <title>{% translate "Verification Email" %}</title>
+  </head>
+  <style type="text/css">
+    @media screen {
+      @font-face {
+        font-family: "Lato";
+        font-style: normal;
+        font-weight: 400;
+        src: local("Lato Regular"), local("Lato-Regular"),
+          url(https://fonts.gstatic.com/s/lato/v11/qIIYRU-oROkIk8vfvxw6QvesZW2xOQ-xsNqO47m55DA.woff)
+            format("woff");
+      }
+    }
+  </style>
+  <body>
+    <div
+      class="title"
+      style="
+        font-size: 15px;
+        font-weight: bold;
+        color: #fff;
+        background-color: #000000e0;
+        height: 50px;
+        display: flex;
+      "
+    >
+      <h1 style="margin: auto">Calmstring</h1>
+    </div>
+    <div
+      class="container"
+      style="
+        background-color: #fff;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 15px;
+        padding-bottom: 20px;
+        
+        color: #000000e0;
+      "
+    >
+      <div class="content">
+        <h3 style="font-size: 20px; font-weight: 700; color: #000000e0">
+          {% translate "Verify your email address" %}
+        </h3>
+        <span style="font-size: 15px; color: #000000b3">
+          {% blocktranslate %} Thanks for starting the new Calmstring account
+          creation process. We want to make sure it's really you. Please enter
+          the following verification code when prompted. If you don't want to
+          create an account, you can ignore this message {% endblocktranslate %}
+        </span>
+        <h4
+          style="
+            font-weight: 700;
+            text-align: center;
+            margin-top: 15px;
+            margin-bottom: 0;
+            color: #000000b3;
+          "
+        >
+          Verification Code
+        </h4>
+        <h1
+          style="
+            font-weight: 900;
+            text-align: center;
+            margin-top: 10px;
+            margin-bottom: 5px;
+          "
+        >
+          {{code}}
+        </h1>
+        <p
+          class="expiry-info"
+          style="
+            text-align: center;
+            font-size: 13px;
+            margin-top: 0px;
+            margin-bottom: 35px;
+          "
+        >
+          {% blocktranslate %} (This code is valid for {{ expiration_minutes }}
+          minutes) {% endblocktranslate %}
+        </p>
+      </div>
+      <div
+        class="fotter"
+        style="
+          border-top: 1px solid #000000e0;
+          font-style: italic;
+          margin-top: 0px;
+        "
+      >
+        <p>{% translate "The Calmstring team" %}</p>
+      </div>
+    </div>
+  </body>
+</html>

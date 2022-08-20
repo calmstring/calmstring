@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
 from pathlib import Path
+import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -20,12 +21,16 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = "django-insecure-kdx)%(vc7ofev8asz)c4x*+zlj6fop7td1ki!y*w^+i3sy2ge$"
+SECRET_KEY = os.environ.get("SECRET_KEY", "dumpy")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = int(bool(os.environ.get("DEBUG", 1)))
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = os.environ.get("ALLOWED_HOSTS", "localhost 192.168.80.32").split(" ")
+
+CORS_ORIGIN_ALLOW_ALL = True
+
+CORS_ALLOW_CREDENTIALS = True
 
 
 # Application definition
@@ -38,14 +43,34 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "recurrence",
+    "huey.contrib.djhuey",
+    "rest_framework",
+    "rest_framework_simplejwt",
+    "dj_rest_auth",
+    "dj_rest_auth.registration",  # just for social views
+    # For social auth
+    "django.contrib.sites",
+    "allauth.account",  # we are not using that - it's only dependency of socialaccount
+    "allauth.socialaccount",
+    # "allauth.socialaccount.providers.facebook",
+    "allauth.socialaccount.providers.google",
+    "django_filters",
+    "corsheaders",
+]
+
+PROJECT_APPS = [
     "accounts",
     "changes",
     "rooms",
+    "events",
 ]
+
+INSTALLED_APPS += PROJECT_APPS
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
+    "corsheaders.middleware.CorsMiddleware",
     "django.middleware.common.CommonMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",
     "django.contrib.auth.middleware.AuthenticationMiddleware",
@@ -111,7 +136,7 @@ AUTH_USER_MODEL = "accounts.User"
 
 LANGUAGE_CODE = "en-us"
 
-TIME_ZONE = "Europe/Warsaw"
+TIME_ZONE = "UTC"
 
 USE_I18N = True
 
@@ -129,3 +154,64 @@ STATIC_URL = "/static/"
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
+
+ROOM_MODEL = "rooms.Room"
+
+# Huey settings
+# https://huey.readthedocs.io/en/latest/
+HUEY = {
+    "huey_class": "huey.MemoryHuey",
+    # "filename": BASE_DIR / "huey.db",
+    "immediate": True,
+}
+
+# allauth settings
+SOCIALACCOUNT_PROVIDERS = {
+    "google": {
+        "SCOPE": ["email"],
+        "AUTH_PARAMS": {
+            "access_type": "online",
+        },
+    }
+}
+SITE_ID = 1
+SOCIALACCOUNT_ADAPTER = "accounts.social.adapter.CustomDefaultSocialAccountAdapter"
+
+# dj-rest-auth settings
+REST_SESSION_LOGIN = False
+REST_AUTH_TOKEN_MODEL = False
+REST_USE_JWT = True
+REST_AUTH_SERIALIZERS = {
+    "USER_DETAILS_SERIALIZER": "accounts.serializers.UserDetailsSerializer",
+}
+
+# simplejwt settings
+SIMPLE_JWT = {"USER_ID_FIELD": "uuid"}
+
+REST_FRAMEWORK = {
+    "DEFAULT_AUTHENTICATION_CLASSES": [
+        "rest_framework_simplejwt.authentication.JWTAuthentication",
+    ],
+    "DEFAULT_FILTER_BACKENDS": ["django_filters.rest_framework.DjangoFilterBackend"],
+    "NON_FIELD_ERRORS_KEY": "detail",
+}
+
+if DEBUG:
+    REST_FRAMEWORK["DEFAULT_AUTHENTICATION_CLASSES"].append(
+        "rest_framework.authentication.SessionAuthentication",
+    )
+
+CALMSTRING = {}
+
+
+# Email configuration
+# https://docs.djangoproject.com/en/3.2/topics/email/
+EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
+EMAIL_USE_TLS = True
+EMAIL_PORT = os.environ.get("EMAIL_PORT", 587)
+EMAIL_HOST = os.environ.get("EMAIL_HOST", "")
+EMAIL_HOST_USER = DEFAULT_FROM_EMAIL = os.environ.get(
+    "EMAIL_HOST_USER", ""
+)
+EMAIL_HOST_PASSWORD = os.environ.get("EMAIL_HOST_PASSWORD", "")
