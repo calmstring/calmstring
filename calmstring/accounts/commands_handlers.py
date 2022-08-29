@@ -12,8 +12,6 @@ def send_verification_email(sender, email, verification, **kwargs):
     """
     Sends verification email to user
     """
-    print("Code: ", verification.code)
-    return True
 
     html_message = render_to_string(
         "accounts/verification_email.html",
