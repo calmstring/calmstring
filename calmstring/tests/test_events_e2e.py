@@ -1,3 +1,4 @@
+from django.test import TestCase
 from events.tests.utils import TestCaseWithRooms
 from events import logic
 from utils.dates import tz_datetime
@@ -39,3 +40,15 @@ class TestEventChangeRevertedHandler(TestCaseWithRooms):
         self.event_occupy.refresh_from_db()
 
         self.assertEqual(self.event_occupy.name, "Unitest")
+
+
+class TestCreateEventRoomHandler(TestCase):
+    def test_create_room(self):
+        from rooms.logic import create_room
+        from events.models import EventRoom
+
+        room = create_room(name="Room1", description="Room 1 description")
+
+        event_room = EventRoom.objects.filter(room=room).first()
+
+        self.assertTrue(isinstance(event_room, EventRoom))

@@ -12,15 +12,9 @@ from utils.models import UUIDModel, TimestampsModel, SoftDeleteModel, SoftDelete
 from datetime import datetime, timedelta, time, date
 from . import signals as events_signals
 from utils.dates import tz_datetime
+from utils.constant import AvailabilitiesBase
 
 # Create your models here.
-
-
-class AvailabilitiesBase(models.TextChoices):
-    BUSY = "BUSY", _("Busy")
-    FREE = "FREE", _("Free")
-    UNAVAILABLE = "UNAVAILABLE", _("Unavailable")
-    UNKNOWN = "UNKNOWN", _("Unknown")
 
 
 class EventRoom(UUIDModel):  # change to room calendar
@@ -40,10 +34,10 @@ class EventRoom(UUIDModel):  # change to room calendar
         default=Availabilities.UNKNOWN,
     )
 
-    room = models.ForeignKey(
+    room = models.OneToOneField(
         settings.ROOM_MODEL,
         on_delete=models.CASCADE,
-        related_name="events",
+        related_name="events_room",
         verbose_name=_("Room"),
     )
 

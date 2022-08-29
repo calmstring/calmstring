@@ -1,6 +1,7 @@
 from django.dispatch import receiver
 from django.utils import timezone
 import changes.signals
+import rooms.signals
 from . import signals as events_signals
 from . import tasks, conf, logic
 
@@ -132,3 +133,10 @@ def event_change_reverted_handler(sender, reverted, to, content_object, **kwargs
         # not other action to do
     else:
         pass
+
+
+@receiver(rooms.signals.room_created)
+def create_event_room_handler(sender, room, **kwargs):
+    from .models import EventRoom
+
+    EventRoom.objects.create(room=room)
