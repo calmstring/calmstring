@@ -26,6 +26,33 @@ def setUp(self):
         "superuser", "super@user.com", "superuser"
     )
     self.user = User.objects.create_user("user", "user@user.com", "user")
+    self.administrative_user = User.objects.create_user(
+        "administrative_user" "administrative_user@email.com",
+        "administrative_user",
+        role=User.Roles.ADMINISTRATIVE,
+    )
+    self.competitive_user = User.objects.create_user(
+        "competitive_user",
+        "competitive_user@email.com",
+        "competitive_user",
+        role=User.Roles.COMPETITIVE,
+    )
+
+    self.trusted_user = User.objects.create_user(
+        "trusted_user",
+        "trusted_user@email.com",
+        "trusted_user",
+        role=User.Roles.TRUSTED,
+    )
+    self.normal_user = User.objects.create_user(
+        "normal_user", "normal_user@email.com", "normal_user", role=User.Roles.NORMAL
+    )
+    self.limited_user = User.objects.create_user(
+        "limited_user",
+        "limited_user@email.com",
+        "limited_user",
+        role=User.Roles.LIMITED,
+    )
 
 
 class TestCaseWithUsers(TestCase):
